@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bello Amanecer Latino Market & Restaurant</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#faf7f2;
+color:#333;
+}
+
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("images/hero.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero{
+max-width:700px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.buttons a{
+display:inline-block;
+margin:10px;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.call{
+background:#f9a825;
+color:white;
+}
+
+.menu{
+background:#c62828;
+color:white;
+}
+
+.buttons a:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:70px 10%;
+}
+
+h2{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#b71c1c;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.about p{
+font-size:18px;
+line-height:1.7;
+}
+
+.special-card{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.special-card img{
+width:100%;
+border-radius:12px;
+}
+
+.price{
+font-size:40px;
+color:#d32f2f;
+margin:15px 0;
+font-weight:bold;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#d84315;
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.8;
+}
+
+.contact{
+text-align:center;
+background:#5d4037;
+color:white;
+}
+
+.contact p{
+margin:12px 0;
+font-size:18px;
+}
+
+.contact a{
+color:#ffd54f;
+text-decoration:none;
+}
+
+footer{
+background:#3e2723;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.float-call{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#2e7d32;
+color:white;
+padding:18px;
+border-radius:50%;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+.float-call:hover{
+transform:scale(1.1);
+}
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:42px;
+}
+
+.about,
+.special-card{
+grid-template-columns:1fr;
+}
+
+section{
+padding:50px 25px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>Bello Amanecer</h1>
+
+<p>Latino Market & Restaurant</p>
+
+<div class="buttons">
+
+<a class="call" href="tel:8045625092">📞 Call Now</a>
+
+<a class="menu" href="#specials">Today's Specials</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="about fade">
+
+<img src="images/store.jpg">
+
+<div>
+
+<h2>Welcome</h2>
+
+<p>
+
+Bello Amanecer is a family-owned Latino Market & Restaurant proudly serving Richmond, Virginia.
+
+Enjoy authentic Latin American meals, fresh groceries, homemade specialties, and friendly service every day.
+
+Whether you're stopping in for lunch or shopping for your favorite Latino products, we're happy to serve you.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="specials" class="fade">
+
+<h2>Today's Specials</h2>
+
+<div class="special-card">
+
+<img src="images/specials.jpg">
+
+<div>
+
+<h3>🍲 Menudo</h3>
+
+<div class="price">$9.99</div>
+
+<p>
+
+Traditional menudo served with tortillas, onions, cilantro, and lime.
+
+</p>
+
+<br>
+
+<h3>🍗 Milanesa de Pollo</h3>
+
+<div class="price">$9.99</div>
+
+<p>
+
+Breaded chicken served with rice, salad, and Salvadoran tortillas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Menu Highlights</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>Breakfast</h3>
+
+<p>
+Huevos Rancheros<br>
+Desayuno Típico<br>
+Tamales
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Lunch</h3>
+
+<p>
+Carne Asada<br>
+Pollo Frito<br>
+Burritos
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Dinner</h3>
+
+<p>
+Pupusas<br>
+Tacos<br>
+Fajitas
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Soups</h3>
+
+<p>
+Menudo<br>
+Sopa de Res<br>
+Sopa de Gallina
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact fade">
+
+<h2>Visit Us</h2>
+
+<p>📍 7225 Hull Street Road, Richmond, VA 23235</p>
+
+<p>📞 <a href="tel:8045625092">(804) 562-5092</a></p>
+
+<p>
+
+<a href="https://maps.google.com/?q=7225+Hull+Street+Road+Richmond+VA+23235" target="_blank">
+
+📍 Open in Google Maps
+
+</a>
+
+</p>
+
+<p>
+
+<a href="https://facebook.com" target="_blank">
+
+👍 Visit our Facebook Page
+
+</a>
+
+</p>
+
+</section>
+
+<footer>
+
+© 2025 Bello Amanecer Latino Market & Restaurant
+
+</footer>
+
+<a class="float-call" href="tel:8045625092">
+
+📞
+
+</a>
+
+<script>
+
+const observer = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".fade").forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
